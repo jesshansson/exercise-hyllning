@@ -32,7 +32,7 @@ h3 {
   text-decoration: underline;
   margin: 0;
 }
-.card-container, .facts-container {
+.card-container, .facts-container, .image-container {
   background-color: #FEFCF3;
   text-align: start;
   width: 60vw;
@@ -41,6 +41,18 @@ h3 {
   box-shadow: 1px 3px 8px 0px rgba(0,0,0,0.37);
 }
 
+.image-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+}
+
+.image-container img {
+  width: auto;
+  max-width: 30%;
+  object-fit: cover;
+}
 img {
   width: 30rem;
   height: auto;
@@ -53,7 +65,7 @@ img {
     width: 100%;
   }
 
-  .card-container, .facts-container {
+  .card-container, .facts-container, .image-container {
     width: 80vw;
   }
 
