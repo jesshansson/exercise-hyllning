@@ -1,10 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Klee+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap');
+
 body {
-  background-color: antiquewhite;
+  background-color: #F5EBE0;
+  font-family: "Klee One", cursive;
+  font-weight: 600;
 }
 
 header {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
+header h2 {
+  font-family: "La Belle Aurore", cursive;
+  font-size: 40px;
+  font-weight: 400;
+  margin: 0;
+}
+
 main {
   display: flex;
   flex-direction: column;
@@ -12,19 +27,34 @@ main {
   justify-content: center;
 }
 
-p, h3, h2{
-  font-family: Arial, Helvetica, sans-serif;
+h3 {
+  font-size: 25px;
+  text-decoration: underline;
+  margin: 0;
 }
 .card-container, .facts-container {
-  background-color: rgb(153, 149, 149);
+  background-color: #FEFCF3;
   text-align: start;
   width: 60vw;
   margin-top: 20px;
   padding: 1rem;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 1px 3px 8px 0px rgba(0,0,0,0.37);
 }
 
 img {
   width: 30rem;
   height: auto;
+}
+
+/*Media queries*/
+
+@media screen and (max-width: 800px) {
+  header img {
+    width: 100%;
+  }
+
+  .card-container, .facts-container {
+    width: 80vw;
+  }
+
 }
